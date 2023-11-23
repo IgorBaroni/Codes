@@ -1,0 +1,42 @@
+<div class="container">
+    <form [formGroup]="cardForm" (submit)="cardSubmit()">
+        <label for="link">Link</label>
+        <br>
+        <input type="text" class="link-input" formControlName="link" [class.unselectable]="popupAberto">
+        <br><br>
+        <label for="description">{{ portugues ? "Descrição" : "Description" }}</label>
+        <br>
+        <textarea class="description-input" cols="35" rows="5" maxlength="152" formControlName="description" [class.unselectable]="popupAberto"></textarea>
+        <div class="buttons">
+            <button [class.unselectable]="popupAberto">{{ portugues ? "Gerar QR Code" : "Generate QR Code" }}</button>
+            <button routerLink="../main" [class.unselectable]="popupAberto">{{ portugues ? "Voltar" : "Return" }}</button>
+        </div>
+    </form>
+</div>
+
+<!-- Success and Failure PopUp -->
+
+<div class="popup center">
+    <div [ngClass]="{'icon-success': sucesso, 'icon-failure': !sucesso}">
+        <i [ngClass]="{'bi bi-check': sucesso, 'bi bi-exclamation-triangle': !sucesso}"></i>
+    </div>
+    <div class="title">
+        {{ sucesso ? portugues ? "Sucesso" : "Success" : portugues ? "Falha" : "Failure"}}
+    </div>
+    <div class="description">
+        {{ sucesso ? portugues ? "O QR Code foi gerado com sucesso!" : "The QR Code was generated successfully!" : portugues ? "Um erro occoreu ao tentar criar o QR Code" : "An error occured when trying to generate the QR Code" }}
+    </div>
+    <div class="dismiss-btn">
+        <button (click)="fecharPopUp()" id="dismiss-popup-btn" >{{ portugues ? "Fechar" : "Dismiss"}}</button>
+    </div>
+</div>
+
+<!-- Waiting spinner -->
+<ngx-spinner
+  bdColor="rgba(51,51,51,0.8)"
+  size="medium"
+  color="#fff"
+  type="cube-transition"
+>
+  <p style="font-size: 20px; color: white">{{ portugues ? "Carregando" : "Loading"}}...</p>
+</ngx-spinner>

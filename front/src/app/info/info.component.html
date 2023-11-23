@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="boxes">
+        <p class="box">{{ portugues ? "Hoje é" : "Today is" }}<br>{{ portugues ? capitalizeFirst(diaAtual) : capitalizeFirst(currentDay) }}</p>
+        <p class="box">{{ portugues ? desejo : wish }}</p>
+        <p class="box">{{ portugues ? "Agora são" : "Now it's" }}<br>{{ portugues ? horaAtual : currentTime }}</p>
+    </div>
+    <div class="container2">
+        <p class="codes" style="white-space: pre-line;" *ngIf="codesnum == 0">{{ portugues ? "Você ainda não criou nenhum" + '\n' + "QR Code" : "You haven't created any" + '\n' + "QR Code yet"}}</p>
+        <p class="codes" *ngIf="codesnum > 0">{{ portugues ? "Você já criou " +this.codesnum+ " QR Codes !" : "You've already created " +this.codesnum+ " QR Codes!"}}</p>
+    </div>
+</div>

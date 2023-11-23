@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins&family=Rubik&display=swap');
+
+:root{
+    --azul-claro: #00688D;
+    --azul-escuro: #005472;
+}
+
+p{
+    font-family: Poppins;
+    color: #FFF;
+}
+
+body{
+    background-color: #003E6A;
+}

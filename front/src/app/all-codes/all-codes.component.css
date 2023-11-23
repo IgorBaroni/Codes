@@ -1,0 +1,334 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+.btn-voltar{
+    position: fixed;
+    top: 9%;
+    left: 15%;
+    border-radius: 44px;
+    background: var(--azul-claro);
+    width: 82px;
+    height: 42px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.msg{
+    font-family: 'Poppins';
+    color: #FFF;
+    font-size: 20px;
+}
+
+.unselectable{
+    pointer-events: none;
+}
+
+.buttons{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50rem;
+}
+
+.buttons button{
+    font-weight: bold;
+}
+
+button{
+    border-radius: 44px;
+    background: var(--azul-claro);
+    width: 42px;
+    height: 42px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button[disabled]{
+    opacity: 0.5;
+    cursor: not-allowed;   
+}
+
+button[disabled]:hover{
+    filter: none;
+}
+
+button[disabled]:active{
+    transform: none;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+
+button:hover{
+    filter: drop-shadow(1px 1px 1px #002947);
+}
+
+.container{
+    width: 980px;
+    height: 560px;
+    border-radius: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azul-escuro);
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 80px;
+    flex-direction: row;
+}
+
+.card{
+    width: 280px;
+    height: 460px;
+    border-radius: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azul-claro);
+    font-family: Poppins;
+    color: #FFF; 
+}
+
+.qrcode{
+    height: 200px;
+    border-radius: 40px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.created{
+    margin-bottom: 10px;    
+}
+
+.description{
+    padding: 0px 10px;
+    line-break: anywhere;
+}
+
+.del button{
+    border-radius: 44px;
+    background: var(--azul-escuro);
+    width: 42px;
+    height: 42px;
+    color: #FFF;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.edit button{
+    border-radius: 44px;
+    background: var(--azul-escuro);
+    width: 42px;
+    height: 42px;
+    color: #FFF;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.buttons2{
+    display: flex;
+    justify-content: space-around;
+    gap: 5rem;
+    position: absolute;
+    top: 20px;
+}
+
+i{
+    font-weight: 900;
+}
+
+
+/* PopUp */
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup{
+    filter: drop-shadow(1px 1px 1px #002947);
+    border: 2px solid #000;
+    font-family: 'Poppins';
+    width: 350px;
+    height: 280px;
+    padding: 30px 20px;
+    background: var(--azul-escuro);
+    border-radius: 10px;
+    box-sizing: border-box;
+    z-index: 2;
+    text-align: center;
+    opacity: 0;
+    top: -200%;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: opacity 300ms ease-in-out,
+                top 1000ms ease-in-out,
+                transform 1000ms ease-in-out;
+}
+
+.popup.active{
+    opacity: 1;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 300ms cubic-bezier(0.18, 0.89, 0.43, 1.19);
+}
+
+.popup .icon-success{
+    margin: 10px 0px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    border-radius: 50%;
+    line-height: 60px;
+    border: 2px solid #00bb09;
+}
+
+.popup .icon-failure{
+    margin: 10px 0px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    border-radius: 50%;
+    line-height: 60px;
+    border: 2px solid #a70000;
+}
+
+.popup .icon-question{
+    margin: 10px 0px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    border-radius: 50%;
+    line-height: 60px;
+    border: 2px solid #b17900;
+}
+
+.popup .icon-edit{
+    margin: 10px 0px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    border-radius: 50%;
+    line-height: 60px;
+    border: 2px solid #008542;
+}
+
+.popup .icon-success i{
+    text-align: center;
+    font-size: 40px;
+    color: #00d80b;
+}
+
+.popup .icon-failure i{
+    text-align: center;
+    font-size: 35px;
+    color: #b30000;  
+}
+
+.popup .icon-question i{
+    text-align: center;
+    font-size: 35px;
+    color: #c78800;  
+}
+
+.popup .icon-edit i{
+    text-align: center;
+    font-size: 30px;
+    color: #00b35a;  
+}
+
+.popup-edit{
+    height: 420px;
+}
+
+.popup .edit-input{
+    margin-top: 10px;
+    padding: 10px;
+    resize: none;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-family: Rubik;
+}
+
+.popup .edit-input:hover{
+    filter: drop-shadow(1px 1px 1px #002947);
+}
+
+.popup .title{
+    font-size: 20px;
+    color: #ffff;
+}
+
+.popup .description{
+    color: #fff;
+    font-size: 15px;
+    padding: 5px;
+}
+.popup .dismiss-btn{
+    margin-top: 10px;
+}
+.popup .dismiss-btn button{
+    padding: 10px 20px;
+    background: var(--azul-claro);
+    color: #FFF;
+    width: 172px;
+    height: 72px;
+    border: 1px solid #111;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border-radius: 44px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.popup .dismiss-btn button:hover{
+    transition: none;
+    filter: drop-shadow(1px 1px 1px #002947);
+}
+
+.dismiss-btn-confirm{
+    display: inline-flex;
+    gap: 10px;
+}
+
+.popup .dismiss-btn-confirm button{
+    width: 152px;
+    height: 72px;
+}

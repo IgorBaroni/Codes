@@ -1,0 +1,105 @@
+<div class="container">
+    <button class="btn-voltar" routerLink="../main" [class.unselectable]="popupAberto">{{ portugues ? "Voltar" :
+        "Return"}}</button>
+
+    <table class="cards" *ngIf="cards">
+        <tr class="card" *ngFor="let card of cards.slice(currentIndex, currentIndex + 2)">
+            <div *ngIf="!loader">
+            </div>
+            <div *ngIf="loader"
+                style="position: absolute; display: flex; align-items:center; justify-content: center; flex-direction: column;">
+                <ngx-skeleton-loader style="position: fixed; top: 13.7%;" count="1" appearance="line"
+                    animation="progress" [theme]="{
+                    background: '#888',
+                    height: '460px',
+                    width: '280px',
+                    'border-radius': '44px'
+                }">
+                </ngx-skeleton-loader>
+            </div>
+            <div class="buttons2" *ngIf="!loader">
+                <td class="edit"><button [title]="portugues ? 'Editar QR Code' : 'Edit QR Code'"
+                        (click)="editarQRCode(card)" [class.unselectable]="popupAberto"><i
+                            class="bi bi-pencil-fill"></i></button></td>
+                <td class="del"><button [title]="portugues ? 'Apagar QR Code' : 'Delete QR Code'"
+                        (click)="deletarQRCode(card.id)" [class.unselectable]="popupAberto"><i
+                            class="bi bi-trash-fill"></i></button></td>
+            </div>
+            <td>
+                <img [src]="card.link" alt="QR-Code" class="qrcode">
+            </td>
+            <td class="created">{{card.createdAt | date: portugues ? 'dd/MM/y' : 'MM/dd/y' }}</td>
+            <td class="description">{{card.description}}</td>
+        </tr>
+    </table>
+
+    <table class="cards" *ngIf="cards[0] == null">
+        <td class="msg">{{ portugues ? "Você não tem nenhum QR Code salvo" : "You don't have any saved QR Code"}}</td>
+    </table>
+    <div class="buttons">
+        <button (click)="cardsAnteriores()" [disabled]="currentIndex == 0" [class.unselectable]="popupAberto"><i
+                class="bi bi-caret-left-fill"></i></button>
+        <button (click)="proximosCards()"
+            [disabled]="currentIndex == cards.length - 2 || cards.length == 0 || cards.length == 1"
+            [class.unselectable]="popupAberto"><i class="bi bi-caret-right-fill"></i></button>
+    </div>
+</div>
+
+
+<!-- Delete Success and Failure PopUp -->
+
+<div class="popup center">
+    <div [ngClass]="{'icon-success': sucesso, 'icon-failure': !sucesso}">
+        <i [ngClass]="{'bi bi-check': sucesso, 'bi bi-exclamation-triangle': !sucesso}"></i>
+    </div>
+    <div class="title">
+        {{ sucesso ? portugues ? "Sucesso" : "Success" : portugues ? "Falha" : "Failure"}}
+    </div>
+    <div class="description">
+        {{ editar ? sucesso ? portugues ? "O QR Code foi editado com sucesso!" : "The QR Code was edited successfully!": portugues ? "Um erro occoreu ao tentar editar o QR Code" : "An error occured when trying to edit the QR Code": sucesso ? portugues ? "O QR Code foi deletado com sucesso!" : "The QR Code was deleted successfully!" :portugues ? "Um erro occoreu ao tentar deletar o QR Code" : "An error occured when trying to delete the QRCode"}}
+    </div>
+    <div class="dismiss-btn">
+        <button (click)="fecharPopUp()" id="dismiss-popup-btn">{{ portugues ? "Fechar" : "Dismiss"}}</button>
+    </div>
+</div>
+
+<!-- Confirm Delete PopUp -->
+
+<div class="popup popup-confirm center">
+    <div class="icon-question">
+        <i class="bi bi-question-lg"></i>
+    </div>
+    <div class="title">
+        {{ portugues ? "Confirmar" : "Question" }}
+    </div>
+    <div class="description">
+        {{ portugues ? "Você deseja remover o QR Code?" : "Do you want to delete the QR Code?"}}
+    </div>
+    <div class="dismiss-btn dismiss-btn-confirm">
+        <button id="dismiss-popup-btn-confirm">{{ portugues ? "Sim" : "Yes"}}</button>
+        <button (click)="fecharPopUpConfirm()" id="dismiss-popup-btn2">{{ portugues ? "Não" : "No"}}</button>
+    </div>
+</div>
+
+<!-- Waiting spinner -->
+<ngx-spinner bdColor="rgba(51,51,51,0.8)" size="medium" color="#fff" type="cube-transition">
+    <p style="font-size: 20px; color: white">{{ portugues ? "Carregando" : "Loading"}}...</p>
+</ngx-spinner>
+
+<!-- Edit PopUp -->
+<div class="popup popup-edit center">
+    <div class="icon-edit">
+        <i class="bi bi-pencil"></i>
+    </div>
+    <div class="title">
+        {{ portugues ? "Editar" : "Edit" }}
+    </div>
+    <div class="description" [formGroup]="codeForm">
+        {{ portugues ? "Escreva um nova descrição" : "Write a new description"}}
+        <textarea class="edit-input" cols="35" rows="5" maxlength="152" formControlName="description"></textarea>
+    </div>
+    <div class="dismiss-btn dismiss-btn-confirm">
+        <button id="dismiss-popup-btn-edit">{{ portugues ? "Salvar" : "Save"}}</button>
+        <button (click)="fecharPopUpEdit()" id="dismiss-popup-btn3">{{ portugues ? "Cancelar" : "Cancel"}}</button>
+    </div>
+</div>
