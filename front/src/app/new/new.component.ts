@@ -44,7 +44,7 @@ export class NewComponent {
     this.cardService.post(card).subscribe(
       (retorno: any) => {
         this.sucesso = true;
-        console.log(retorno);
+        // console.log(retorno);
       },
       (erro: any) => {
         this.sucesso = false;

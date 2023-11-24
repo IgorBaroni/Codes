@@ -55,8 +55,8 @@
     <div class="title">
         {{ sucesso ? portugues ? "Sucesso" : "Success" : portugues ? "Falha" : "Failure"}}
     </div>
-    <div class="description">
-        {{ editar ? sucesso ? portugues ? "O QR Code foi editado com sucesso!" : "The QR Code was edited successfully!": portugues ? "Um erro occoreu ao tentar editar o QR Code" : "An error occured when trying to edit the QR Code": sucesso ? portugues ? "O QR Code foi deletado com sucesso!" : "The QR Code was deleted successfully!" :portugues ? "Um erro occoreu ao tentar deletar o QR Code" : "An error occured when trying to delete the QRCode"}}
+    <div class="description" style="white-space: pre-line;" >
+        {{ editar ? sucesso ? portugues ? "O QR Code foi editado com sucesso!" : "The QR Code was edited successfully!": portugues ? "Um erro occoreu ao tentar editar o" + '\n' + "QR Code" : "An error occured when trying to edit" + '\n' + "the QR Code": sucesso ? portugues ? "O QR Code foi deletado com sucesso!" : "The QR Code was deleted successfully!" :portugues ? "Um erro occoreu ao tentar deletar o QR Code" : "An error occured when trying to delete the QRCode"}}
     </div>
     <div class="dismiss-btn">
         <button (click)="fecharPopUp()" id="dismiss-popup-btn">{{ portugues ? "Fechar" : "Dismiss"}}</button>

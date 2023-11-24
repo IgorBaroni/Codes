@@ -23,8 +23,8 @@
     <div class="title">
         {{ sucesso ? portugues ? "Sucesso" : "Success" : portugues ? "Falha" : "Failure"}}
     </div>
-    <div class="description">
-        {{ sucesso ? portugues ? "O QR Code foi gerado com sucesso!" : "The QR Code was generated successfully!" : portugues ? "Um erro occoreu ao tentar criar o QR Code" : "An error occured when trying to generate the QR Code" }}
+    <div class="description" style="white-space: pre-line;" >
+        {{ sucesso ? portugues ? "O QR Code foi gerado com sucesso!" : "The QR Code was generated successfully!" : portugues ? "Um erro occoreu ao tentar criar o" + '\n' + "QR Code" : "An error occured when trying to generate the QR Code" }}
     </div>
     <div class="dismiss-btn">
         <button (click)="fecharPopUp()" id="dismiss-popup-btn" >{{ portugues ? "Fechar" : "Dismiss"}}</button>
