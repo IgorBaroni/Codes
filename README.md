@@ -1,12 +1,15 @@
 # Codes
-Gerador de códigos QR criado com Angular e C# 
-A QR Code generator app made with Angular and C#
+A QR Code generator app made with Angular and C#<br>
+The app supports two languages (Brazilian Portuguese and American English) 
 
-# Aplicação
-Para rodar a aplicação use o comando ```npm run dev``` no projeto web e no projeto server. Ambos os projetos devem estar em execução para o funcionamento da aplicação.
+# After cloning the project you must follow some steps:
 
-# Server
-Para o funcionamento da aplicação é necessário ter o arquivo .env dentro do projeto server. O arquivo deve conter as seguintes linhas de comando:
-<br>------------<br> #Database <br> DATABASE_URL="file:./dev.db" <br><br> #OPENAI <br> OPENAI_KEY=" " <br>
-<br>------------<br> Para obter a "openai key" é necessário que o usuário tenha uma conta no site da OpenAI e crie uma secret key (pode ser criada em "ver chaves API" no perfil do usuário).
+## Step 1 - Back Folder, Back-End Project
+To execute the project run ``dotnet watch run`` command.
+
+## Step 2 - Front Folder, Front-End Project
+Firstly, you need to install ``node_modules`` files to execute the project, to do this run ``npm install`` command. <br>
+After this you can run ``npm start`` command, and the app should work (make sure you are running the back-end project).
+
+
 
