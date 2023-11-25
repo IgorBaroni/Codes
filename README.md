@@ -8,5 +8,5 @@ The app supports two languages (Brazilian Portuguese and American English)
 To execute the project run ``dotnet watch run`` command.
 
 ## Step 2 - Front Folder, Front-End Project
-Firstly, you need to install ``node_modules`` files to execute the project, to do this run``npm install`` command. <br>
+Firstly, you need to install ``node_modules`` files to execute the project, to do this run ``npm install`` command. <br>
 After this you can run ``npm start`` command, and the app should work (make sure you are running the back-end project).
