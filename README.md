@@ -3,7 +3,7 @@ A Link QR Code generator app made with Angular and C#<br>
 The app supports two languages (Brazilian Portuguese and American English) 
 
 # How it works
-The app has 3 screens, the main screen, the new screen qnd the codes screen.
+The app has 3 screens, the main screen, the new screen and the codes screen.
 
 ## Main Screen
 The Main screen shows the User some information (like current time, the number of saved qr codes, etc) on the center, and on the right side it shows a switch (which you can use to change the app's language) and two buttons, the top button will send the User to the new screen, and the bottom one will send the User to the codes screen.
@@ -14,7 +14,7 @@ Clicking the left side button will create the QR Code, and clicking the right si
 
 ## Codes Screen
 The Codes screen shows all the QR Codes the User made already.
- 
+ <br>
 
 # After cloning the project you must follow some steps:
 
