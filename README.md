@@ -14,7 +14,7 @@ Clicking the left side button will create the QR Code, and clicking the right si
 
 ## Codes Screen
 The Codes screen shows all the QR Codes the User made already.
-<br><br>
+<br><br><br>
 
 # After cloning the project you must follow some steps:
 
