@@ -14,7 +14,7 @@ The new screen has two inputs and two buttons. In the top input the User has to 
 Clicking the left side button will create the QR Code, and clicking the right side button will return the User to the main screen.
 
 ## Codes Screen
-The codes screen shows all the QR Codes the User made already.
+The codes screen shows all the QR Codes the User made already and a button which returns the User to the main screen.
 <br><br><br>
 
 # After cloning the project you must follow some steps:
