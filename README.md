@@ -1,6 +1,6 @@
 # Codes
-A Link QR Code generator app made with Angular and C#<br>
-The app supports two languages (Brazilian Portuguese and American English) 
+A Link QR Code generator app made with Angular and C#.<br>
+The app supports two languages (Brazilian Portuguese and American English). 
 <br><br><br>
 
 # How it works
