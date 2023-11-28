@@ -10,8 +10,8 @@ The app has 3 screens, the main screen, the new screen and the codes screen.
 The Main screen shows the User some information (like current time, the number of saved qr codes, etc) on the center, and on the right side it shows a switch (which you can use to change the app's language) and two buttons, the top button will send the User to the new screen, and the bottom one will send the User to the codes screen.
 
 ## New Screen
-The new screen has two inputs and two buttons. In the top input the User has to fill it with a link which is going to turn into a QR Code image, and in the bottom one the User has to fill it with a description.
-Clicking the left side button will create the QR Code, and clicking the right side button will return the User to the main screen.
+The new screen has two inputs and two buttons. The User has to fill the top input with a link which is going to turn into a QR Code image, and the bottom input with a description.
+Clicking the left side button will create the QR Code, and clicking the right side button will return the User to the main screen, canceling its creation.
 
 ## Codes Screen
 The codes screen shows all the QR Codes the User made already and a button which returns the User to the main screen.
