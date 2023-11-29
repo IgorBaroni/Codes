@@ -1,6 +1,21 @@
-# Codes
-A Link QR Code generator app made with Angular and C#.<br>
-The app supports two languages (Brazilian Portuguese and American English). 
+<p align="center">
+    <img alt="CodesLogo" src="front/src/assets/icon.png" />
+</p>
+
+<h2 align="center">
+  Codes
+</h2>
+
+<p align="center">
+  <a href="README.pt.md" style="color: white ">Português</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="README.md" style="color: #FFF">English</a>
+</p>
+
+<p align="center">
+  <br>
+  A Link QR Code generator app made with Angular and C#.<br>
+  The app supports two languages (Brazilian Portuguese and American English). 
+</p>
 <br><br><br>
 
 # How it works
