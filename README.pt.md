@@ -19,25 +19,36 @@
 <br><br><br>
 
 # Como Funciona
-The app has 3 screens, the main screen, the new screen and the codes screen.
+O programa tem 3 telas, a tela "main", a tela "new" e a tela "codes".
 
 ## Tela "Main"
-A tela "Main" mostra ao usuário algumas informações (como hora atual, número de qr codes salvos, etc) no centro, e ao lado direito mostra um "switch" (que o usuário pode usar para mudar o idioma do programa) e dois botões, o botão de cima vai levar o usuário para a tela "new", e o botão de baixo vai levar o usuário para a tela "codes".                                                                                            
+A tela "main" mostra ao usuário algumas informações (como hora atual, número de qr codes salvos, etc) no centro, e ao lado direito mostra um "switch" (que o usuário pode usar para mudar o idioma do programa) e dois botões, o botão de cima vai levar o usuário à tela "new", e o botão de baixo vai levar o usuário à tela "codes".                 
 
+<p align="center">
+    <img alt="CodesLogo" src="front/src/assets/icon.png" />
+</p>
 
 ## Tela "New"
-The new screen has two inputs and two buttons. The User has to fill the top input with a link which is going to turn into a QR Code image, and the bottom input with a description.
-Clicking the left side button will create the QR Code, and clicking the right side button will return the User to the main screen, canceling its creation.
+A tela "new" tem dois campos de escrita e dois botões. O usuário tem que preencher o campo de escrita de cima com um link (que vai se tornar uma imagem do QR Code) e o campo de escrita de baixo com uma descrição.
+Clicar no botão da esquerda faz com que o QR Code seja criado, e clicar no botão da direita faz com que o usuário retorne à tela "main", cancelando a operação. 
+
+<p align="center">
+    <img alt="CodesLogo" src="front/src/assets/icon.png" />
+</p>
 
 ## Tela "Codes"
-The codes screen shows all the QR Codes the User made already and a button which returns the User to the main screen.
+A tela "codes" mostra todos os QR Codes que o usuário já criou e um botão que retorna o usuário à tela "main".
 <br><br><br>
 
-# After cloning the project you must follow some steps:
+<p align="center">
+    <img alt="CodesLogo" src="front/src/assets/icon.png" />
+</p>
 
-## Step 1 - Back Folder, Back-End Project
-To execute the project run the ``dotnet watch run`` command.
+# Após clonar o repositório você deve seguir alguns passos:
 
-## Step 2 - Front Folder, Front-End Project
-Firstly, you need to install ``node_modules`` files to execute the project, to do this run the ``npm install`` command. <br>
-After this you can run the ``npm start`` command, and the app should open (make sure you are running the back-end project).
+## Passo 1 - Pasta back, projeto Back-End
+Para executar o projeto rode o comando ``dotnet watch run``.
+
+## Passo 2 - Pasta front, projeto Front-End
+Primeiramente, você precisa instalar os arquivos do ``node_modules`` para executar o projeto, para fazer isso rode o comando ``npm install``. <br>
+Depois disso você pode rodar o comando ``npm start``, e o programa deve abrir (certifique-se de estar rodando o projeto back-end).
