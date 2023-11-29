@@ -1,7 +1,3 @@
-<p align="center">
-    <img alt="CodesLogo" src="front/src/assets/icon.png" />
-</p>
-
 <h2 align="center">
   Codes
 </h2>
