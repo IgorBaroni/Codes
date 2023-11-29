@@ -7,8 +7,8 @@
 </h2>
 
 <p align="center">
-  <a href="README.pt.md" style="color: white ">Português</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="README.md" style="color: #FFF">English</a>
+  <a href="README.pt.md">English</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="README.md">Português</a>
 </p>
 
 <p align="center">
