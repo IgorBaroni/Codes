@@ -9,7 +9,7 @@
 
 <p align="center">
   <br>
-  A Link QR Code generator app made with Angular and C#.<br>
+  A Website Link QR Code Generator App made with Angular and C#.<br>
   The app supports two languages (Brazilian Portuguese and American English). 
 </p>
 <br><br><br>
