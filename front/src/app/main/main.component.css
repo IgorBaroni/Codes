@@ -2,7 +2,8 @@
     width: 1050px;
     height: 610px;
     border-radius: 52px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 60% 5%;
     align-items: center;
     justify-content: center;
     background-color: #006A8F;
@@ -12,16 +13,8 @@
     margin-right: 5rem;
 }
 
-
-.aside{
-    position: fixed;
-    right: 10rem;
-}
-
 .title{
-    position: fixed;
-    top: 1.5rem;
-    right: 14.5rem;
+    margin-left: 100%;
     font-family: Rubik;
     color: #FFF;
     font-style: italic;

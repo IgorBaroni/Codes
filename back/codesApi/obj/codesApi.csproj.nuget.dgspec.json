@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Cliente\\Desktop\\codes\\back\\codesApi\\codesApi.csproj": {}
+    "C:\\Users\\Cliente\\Desktop\\codes-1\\Codes\\back\\codesApi\\codesApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Cliente\\Desktop\\codes\\back\\codesApi\\codesApi.csproj": {
+    "C:\\Users\\Cliente\\Desktop\\codes-1\\Codes\\back\\codesApi\\codesApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cliente\\Desktop\\codes\\back\\codesApi\\codesApi.csproj",
+        "projectUniqueName": "C:\\Users\\Cliente\\Desktop\\codes-1\\Codes\\back\\codesApi\\codesApi.csproj",
         "projectName": "codesApi",
-        "projectPath": "C:\\Users\\Cliente\\Desktop\\codes\\back\\codesApi\\codesApi.csproj",
+        "projectPath": "C:\\Users\\Cliente\\Desktop\\codes-1\\Codes\\back\\codesApi\\codesApi.csproj",
         "packagesPath": "C:\\Users\\Cliente\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cliente\\Desktop\\codes\\back\\codesApi\\obj\\",
+        "outputPath": "C:\\Users\\Cliente\\Desktop\\codes-1\\Codes\\back\\codesApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Cliente\\AppData\\Roaming\\NuGet\\NuGet.Config"
