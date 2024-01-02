@@ -20,7 +20,7 @@ p{
 .boxes{
     display: flex;
     position: fixed;
-    top: 4%;
+    top: 10%;
     left: 15%;
 }
 
@@ -38,10 +38,10 @@ p{
 
 .container{
     position: fixed;
-    top: 6%;
+    top: 10%;
     left: 14%;
     width: 710px;
-    height: 550px;
+    height: 540px;
     border-radius: 52px;
     display: flex;
     align-items: center;
@@ -50,5 +50,5 @@ p{
 }
 
 .container2{
-
+    margin-top: 50px;
 }
