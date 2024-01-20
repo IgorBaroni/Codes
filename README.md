@@ -35,6 +35,6 @@ Para executar o projeto rode o comando ``dotnet watch run``.
 
 ## Passo 2 - Pasta front, projeto Front-End
 Primeiramente, você precisa instalar os arquivos do ``node_modules`` para executar o projeto, para fazer isso rode o comando ``npm install``. <br>
-Após isso, entre no arquivo ``environment.ts`` dentro da pasta enviroments e mude a ``UrlPrincipal`` para a url que é criada quando você rodar o projeto Back-End.
+Após isso, entre no arquivo ``enviroment.ts`` dentro da pasta enviroments e mude a ``UrlPrincipal`` para a url que é criada quando você rodar o projeto Back-End.
 <br>
 Depois disso você pode rodar o comando ``npm start``, e o programa deve abrir (certifique-se de estar rodando o projeto back-end).
