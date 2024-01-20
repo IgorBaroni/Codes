@@ -36,6 +36,6 @@ To execute the project run the ``dotnet watch run`` command.
 
 ## Step 2 - Front Folder, Front-End Project
 Firstly, you need to install ``node_modules`` files to execute the project, to do this run the ``npm install`` command. <br>
-After this
+After this, go to ``enviroment.ts`` file in enviroments folder and change ``UrlPrincipal`` value to the one created when you run the Back-End Project.
 <br>
 Then you can run the ``npm start`` command, and the app should open (make sure you are running the back-end project).
